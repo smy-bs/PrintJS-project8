@@ -295,3 +295,53 @@ footer div {
 		flex: 2;
 	}
 }
+@media screen and (max-width: 768px){
+
+header.container{
+		display:flex;
+		flex-direction: row;
+	}
+.btn {
+	padding: 15px 20px;
+	}
+	#banner .arrow_left {
+		display:none;
+	}
+	#banner .arrow_right {
+		display:none;
+	}
+	section.container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	aside,img{
+		width:450px;
+	}
+	#products.container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	#contact.container{
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.inline-icon{
+		display:none;
+	}
+	.boutiqueImage{
+	display:none;
+	}
+ footer{
+	display:flex;
+		flex-direction: column;
+		align-items: center;
+		gap:25px;
+ }
+ .logoicon{
+	display:none;
+ }
+	
+}
