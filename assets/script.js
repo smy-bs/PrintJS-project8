@@ -78,9 +78,7 @@ window.addEventListener('keydown', (e)=>{
 		}
 });
 
-
 	/*  functions   */
-	
 	function ajouterIndex(){
 		if(index+1 >= slides.length){
 			index = 0
@@ -89,8 +87,9 @@ window.addEventListener('keydown', (e)=>{
 			}
 		bannerImg.src = `./assets/images/slideshow/${slides[index].image}`
 		TagLine.innerHTML = slides[index].tagLine;
+		checkSelected(index);
 	}
-
+	
 	function retirerIndex(){
 		if(index === 0){
 			index = slides.length-1
@@ -99,9 +98,8 @@ window.addEventListener('keydown', (e)=>{
 		}
 	bannerImg.src = `./assets/images/slideshow/${slides[index].image}`
 	TagLine.innerHTML = slides[index].tagLine;
-		
+	checkSelected(index);
 	}
-
 
 	function checkSelected(index){
 		tableauDots.forEach((dot,i)=>{
